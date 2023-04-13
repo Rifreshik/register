@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <title>Регистрация</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="script.js"></script>
+      <script src="toast.min.js"></script>
 
      
 
@@ -27,7 +27,7 @@
         }
         
         form {
-          border: 3px solid #f1f1f1;
+          border: 10px solid #f1f1f1;
           width: 80%;
           max-width: 400px;
           padding: 20px;
@@ -55,6 +55,7 @@
           cursor: pointer;
           width: 100%;
           border-radius: 10px;  
+          margin-top: 30px;
         }
         
         button:hover {
@@ -112,15 +113,19 @@
         h2{
           color: #FFFFFF;
           font-family: Helvetica ;
+          text-align: center  ;
           
         }
         b {
           color: #FFFFFF80;   
           font-family: Helvetica ;
+          margin-bottom   : 30px;
         }
         
         input {
           background-color: #21254A; 
+         outline: 1px solid white;
+         padding-top: 30px;
           
         
           }
@@ -128,6 +133,7 @@
           background-color: #21254A ;
           color: #f1f1f1;
           border: 0px solid #21254A;
+          margin-top: 15  px;
           
         }
         
@@ -148,16 +154,19 @@
           <input type="password" placeholder="Введите пароль" name="password" required>
           <label for="role"><b>Роль:</b></label>
           <select name="role">
-          <option value="user">Пользователь</option>
+          <option value="user">Сотрудник</option>
           <option value="executor">Исполнитель</option>
           <option value="manager">Руководитель</option>
           </select>
           <button type="submit" id="submit" onclick="alerted();">Зарегестрироваться     </button>
-          <div class="clearfix">
-          <button type="button" class="cancelbtn">Отменить</button>
-          </div>
-          </form>
-        </div>
+          <button type="button" class="cancelbtn">Авторизация</button>
        
+          <div class="clearfix">
+         
+          </div>
+        
+        </div>
+        <span class="element">Контент 1</span>
+        
             </body>
           </html>
