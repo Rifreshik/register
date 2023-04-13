@@ -1,0 +1,163 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Регистрация</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="toast.min.js"></script>
+
+     
+
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif,;
+          margin: 0;
+        }
+        
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        
+        form {
+          border: 3px solid #f1f1f1;
+          width: 80%;
+          max-width: 400px;
+          padding: 20px;
+          background-color: #21254A;
+          border-radius: 40px;  
+
+        }
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 0px solid #ffff;
+          box-sizing: border-box;
+          color: white;
+        }
+        
+        button {
+          background-color: purple;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 10px;  
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          width: 100%;
+       
+          
+        }
+        
+        .container>h2, .container>span {
+          text-align: center;
+          color: white;
+        }
+        
+        .container>hr {
+          border: 1px solid #21254A;
+          padding-top: 10 px;
+          
+        }
+        
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .container {
+            height: auto;
+          }
+          
+          form {
+            width: 80%;
+          }
+          
+          img.avatar {
+            width: 80%;
+          }
+        }
+        h2{
+          color: #FFFFFF;
+          font-family: Helvetica ;
+          
+        }
+        b {
+          color: #FFFFFF80;   
+          font-family: Helvetica ;
+        }
+        
+        input {
+          background-color: #21254A; 
+          
+        
+          }
+        select{
+          background-color: #21254A ;
+          color: #f1f1f1;
+          border: 0px solid #21254A;
+          
+        }
+        
+        
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <form action="/action_page.php">
+          <h2>Регистрация</h2>
+         
+          <label for="username"><b>Имя пользователя</b></label>
+          <input type="text" placeholder="Введите имя пользователя" name="username" required>
+
+          <label for="email"><b>Электронная почта</b></label>
+          <input type="text" placeholder="Введите электронную почту" name="email" required>
+          <label for="password"><b>Пароль</b></label>
+          <input type="password" placeholder="Введите пароль" name="password" required>
+          <label for="role"><b>Роль:</b></label>
+          <select name="role">
+          <option value="user">Пользователь</option>
+          <option value="executor">Исполнитель</option>
+          <option value="manager">Руководитель</option>
+          </select>
+          <button type="submit" id="submit" onclick="alerted();">Зарегестрироваться     </button>
+          <div class="clearfix">
+          <button type="button" class="cancelbtn">Отменить</button>
+          </div>
+          </form>
+        </div>
+       
+            </body>
+          </html>
